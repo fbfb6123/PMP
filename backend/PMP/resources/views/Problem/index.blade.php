@@ -11,6 +11,8 @@
         <li>{{$item->name}} [{{$item->email}},{{$item->password}}]</li>
     @endforeach
 </ol>
+<div id="example"></div>
 
+<script src="{{asset('/js/app.js')}}"></script>
 </body>
 </html>
