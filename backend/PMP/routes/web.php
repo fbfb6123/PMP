@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/problem',[ProblemController::class, 'index'])->name('problem');
+
+Route::post('/register', 'Auth\RegisterController@register')->name('register');
