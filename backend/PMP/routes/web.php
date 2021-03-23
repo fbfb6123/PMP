@@ -20,4 +20,8 @@ Route::get('/', function () {
 
 Route::get('/problem',[ProblemController::class, 'index'])->name('problem');
 
-Route::post('/register', 'Auth\RegisterController@register')->name('register');
+Route::post('/register', 'App\Http\Auth\RegisterController@register')->name('register');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
