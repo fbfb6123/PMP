@@ -21,7 +21,7 @@ class UserRegisterTest extends TestCase
             'password' => 'password',
             'password_confirmation' => 'password'
         ])
-            ->assertStatus(500);
+            ->assertStatus(302);
         $this->assertDatabaseHas('users', ['email' => $email]);
     }
 }
