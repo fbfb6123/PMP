@@ -3,6 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
+ikedaa.pem
 .env
 .env.backup
 .phpunit.result.cache
